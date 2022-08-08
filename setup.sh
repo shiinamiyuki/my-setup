@@ -1,5 +1,8 @@
 sudo apt update
-sudo apt install build-essentials git cmake clang
+sudo apt install gcc g++ cmake clang
+wget https://apt.llvm.org/llvm.sh
+chmod +x llvm.sh
+sudo ./llvm.sh 14
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 cargo install sccache
