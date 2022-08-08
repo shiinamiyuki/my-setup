@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install gcc g++ cmake clang
+sudo apt install gcc g++ cmake clang pkg-config libssl-dev
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 sudo ./llvm.sh 14
