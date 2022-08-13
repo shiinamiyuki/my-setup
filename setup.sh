@@ -1,5 +1,5 @@
 OLD=.old-bashrc
-if [ ! -f OLD ] then
+if [ ! -f $OLD ] ;then
   mv ~/.bashrc $OLD
 fi
 
@@ -13,4 +13,4 @@ source "$HOME/.cargo/env"
 cargo install sccache
 echo "export RUSTC_WRAPPER=sccache" >> ~/.bashrc
 echo "export vi=nvim" >> ~/.bashrc
-source ~/.bashrc
+echo "source ~/.cargo/env" >> ~/.bashrc
