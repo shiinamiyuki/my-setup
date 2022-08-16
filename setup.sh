@@ -4,7 +4,7 @@ if [ ! -f $OLD ] ;then
 fi
 
 sudo apt update
-sudo apt install gcc g++ cmake clang pkg-config libssl-dev python3-dev neovim python3-venv wget ninja-build
+sudo apt install gcc g++ cmake clang pkg-config libssl-dev python3-dev neovim python3-venv wget ninja-build libc++-dev libc++abi-dev
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 sudo ./llvm.sh 14
