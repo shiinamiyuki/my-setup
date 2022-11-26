@@ -1,6 +1,6 @@
 OLD=.old-bashrc
 if [ ! -f $OLD ] ;then
-  mv ~/.bashrc $OLD
+  cp ~/.bashrc $OLD
 fi
 
 sudo apt update
