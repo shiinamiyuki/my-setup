@@ -8,7 +8,7 @@ sudo apt install curl gcc g++ cmake clang pkg-config libssl-dev python3-dev neov
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
 sudo ./llvm.sh 15
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
 cargo install sccache
 echo "export RUSTC_WRAPPER=sccache" >> ~/.bashrc
